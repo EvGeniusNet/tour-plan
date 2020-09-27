@@ -753,5 +753,24 @@ template {
   .container {
     max-width: 280px;
   }
+  .breadcrumb-list {
+    padding: 19px 0;
+  }
+  .navbar-top {
+    padding: 25px 0;
+  }
+  .hotel {
+    padding: 0;
+  }
+  .hotel-info__description {
+    margin: 0;
+  }
+  .stars {
+    margin-right: 17px;
+  }
+  .stars img {
+    height: 6px;
+    width: 6px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
