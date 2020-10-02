@@ -537,6 +537,10 @@ template {
   color: inherit;
 }
 
+.container {
+  margin-left: 165px;
+}
+
 .logo {
   margin-bottom: 45px;
   width: 177px;
@@ -546,7 +550,7 @@ template {
 
 .hotel {
   padding-bottom: 70px;
-  padding-top: 15px;
+  padding-top: 25px;
 }
 
 .hotel-info {
@@ -554,10 +558,10 @@ template {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
