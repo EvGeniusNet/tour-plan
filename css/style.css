@@ -608,11 +608,18 @@ template {
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
   margin-top: 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .stars img {
-  width: 6px;
-  height: 6px;
+  margin-right: 4px;
+}
+
+.stars img:last-child {
+  margin-right: unset;
 }
 
 .offer {
@@ -688,8 +695,8 @@ template {
 
 @media (max-width: 768px) {
   .container {
-    width: 700px;
-    margin: 0 35px;
+    max-width: 700px;
+    margin-left: 35px;
   }
   .rating__counter span {
     font-size: 10px;
@@ -708,34 +715,46 @@ template {
     padding-top: 5px;
   }
   .breadcrumb-list {
-    padding-top: 20px;
+    padding-top: 21px;
   }
   .hotel {
-    padding-top: 18px;
-  }
-  .hotel-info__name {
-    margin-top: 2px;
-  }
-  .hotel-info__offer {
-    margin-top: 2px;
+    padding-top: 25px;
   }
   .hotel-info__rating {
+    margin-bottom: 12px;
+  }
+  .breadcrumb-list {
+    padding-top: 21px;
+  }
+  .breadcrumb-list-wrapper {
+    max-width: 268px;
+  }
+  .breadcrumb-list-info__name {
+    margin-top: 2px;
+  }
+  .breadcrumb-list-info__offer {
+    margin-top: 2px;
+  }
+  .breadcrumb-list-info__rating {
     padding-left: 6px;
     padding-right: 6px;
     margin-bottom: 6px;
   }
-  .hotel-info__description {
+  .breadcrumb-list-info__description {
     margin-top: 0;
+    width: 392px;
   }
-  .stars img {
-    height: 6px;
-    width: 6px;
+}
+
+@media (max-width: 740px) {
+  .container {
+    max-width: 670px;
   }
 }
 
 @media (max-width: 720px) {
   .container {
-    max-width: 576px;
+    max-width: 650px;
     width: 92%;
   }
   .navbar__search, .navbar-menu, .navbar__user {
@@ -807,6 +826,11 @@ template {
 }
 
 @media (max-width: 576px) {
+  .container {
+    max-width: 480px;
+    width: 90%;
+    margin: auto;
+  }
   .logo {
     width: 99px;
     height: 13px;
@@ -822,7 +846,8 @@ template {
     margin-top: 26px;
   }
   .navbar-top {
-    padding: 25px 0;
+    padding-top: 34px;
+    padding-bottom: 26px;
     height: 70px;
   }
   .navbar-top__menu-button {
@@ -851,11 +876,11 @@ template {
   .hotel {
     padding: 0;
   }
-  .hotel-wrapper {
-    max-width: 268px;
-  }
   .hotel-info__description {
     margin: 0;
+  }
+  .hotel-wrapper {
+    max-width: 268px;
   }
 }
 /*# sourceMappingURL=style.css.map */

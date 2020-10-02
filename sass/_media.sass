@@ -22,8 +22,8 @@
 // !768px
 @media (max-width: 768px)
 	.container
-		width: 700px
-		margin: 0 35px
+		max-width: 700px
+		margin-left: 35px
 	.rating__counter span
 		font-size: 10px
 	.navbar-menu
@@ -36,9 +36,16 @@
 	.user__name
 		padding-top: 5px
 	.breadcrumb-list
-		padding-top: 20px
+		padding-top: 21px
 	.hotel
-		padding-top: 18px
+		padding-top: 25px
+		&-info
+			&__rating
+				margin-bottom: 12px
+	.breadcrumb-list
+		padding-top: 21px
+		&-wrapper
+			max-width: 268px
 		&-info
 			&__name
 				margin-top: 2px
@@ -50,13 +57,16 @@
 				margin-bottom: 6px
 			&__description
 				margin-top: 0
-	.stars img
-		height: 6px
-		width: 6px
+				// margin-left: 2px
+				width: 392px
+// // !740px
+@media (max-width: 740px)
+	.container
+		max-width: 670px
 // !720px
 @media (max-width: 720px)
 	.container
-		max-width: 576px
+		max-width: 650px
 		width: 92%
 	.navbar
 		&__search, &-menu, &__user
@@ -97,6 +107,10 @@
 				margin-left: 0
 // !576px
 @media ( max-width: 576px )
+	.container
+		max-width: 480px
+		width: 90%
+		margin: auto
 	.logo
 		width: 99px
 		height: 13px
@@ -105,11 +119,13 @@
 	.container
 		max-width: 280px
 		margin: auto	
+	
 	.logo
 		margin-top: 26px
 	.navbar
 		&-top
-			padding: 25px 0
+			padding-top: 34px
+			padding-bottom: 26px
 			height: 70px
 			&__menu
 				&-button
@@ -127,11 +143,11 @@
 			padding: 0
 	.hotel
 		padding: 0
-		&-wrapper
-			max-width: 268px
 		&-info
 			&__description
 				margin: 0
+		&-wrapper
+			max-width: 268px
 
 
 
