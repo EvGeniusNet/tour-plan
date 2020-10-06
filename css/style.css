@@ -907,6 +907,14 @@ template {
   overflow: hidden;
 }
 
+.newsletter {
+  padding: 98px 0 87px 0;
+  background-image: url(../img/newsletter-bg.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
