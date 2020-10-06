@@ -198,12 +198,25 @@
 			margin-bottom: 20px
 	.booking
 		padding: 22px
+	.map
+		border: 1px solid
+// !533px
+@media ( max-width: 533px)
+	.hotel
+		&-block
+			flex-direction: column
+	.booking
+		width: 100%
+		margin-bottom: 20px
+		&__button
+			margin: 0
+	.map
+		width: 100%
 // !320px 
 @media (max-width: 320px)
 	.container
 		max-width: 280px
 		margin: auto
-
 	.logo
 		margin-top: 26px
 	.navbar
@@ -230,5 +243,48 @@
 		&-info
 			&__description
 				margin: 0
+				margin-bottom: 28px
 		&-wrapper
 			max-width: 268px
+		&__slider
+			height: 179px
+			object-fit: cover
+	.booking
+		padding-top: 29px
+		padding-bottom: 26px
+		&__start
+			margin-left: 0
+		&__pricetag
+			margin-left: 1px
+			margin-top: -3px
+		&__room
+			padding-right: 3px
+		&__per-room
+			margin-left: 0
+			margin-top: -3px
+		&__heading
+			margin-left: -1px
+			padding-top: 0
+		&__button
+			width: 235px
+			height: 45px
+			margin-left: 1px
+			padding-left: 9px
+		&__num
+			margin-left: 10px
+			margin-right: 2px
+			margin-top: 0
+	.map
+		height: 173px
+	.slider
+		&-button
+			width: 11px
+			height: 12px
+			&--prev
+				left: 6px
+				top: 92px
+				background-size: 5px
+			&--next
+				right: 8px
+				top: 92px
+				background-size: 5px
