@@ -9,6 +9,10 @@
 				height: 100%
 				width: 100%
 				object-fit: cover
+	.hotel
+		&-info
+			&__description
+				margin-bottom: 0
 		// !992px
 @media (max-width: 992px)
 	.container
@@ -117,18 +121,24 @@
 			margin-top: -2px
 	.map
 		width: 340px
-// !740px
-@media (max-width: 740px)
-	.container
-		max-width: 670px
+// !755px
+@media ( max-width: 755px )
 	.slider
 		width: 670px
 	.booking
 		width: 330px
 	.map
 		width: 330px
-// !720px
-@media (max-width: 720px)
+	.hotel
+		&-block
+			max-width: 670px
+// !740px
+@media (max-width: 740px)
+	.container
+		max-width: 670px
+
+// !722px
+@media (max-width: 722px)
 	.container
 		max-width: 650px
 		width: 92%
@@ -198,8 +208,6 @@
 			margin-bottom: 20px
 	.booking
 		padding: 22px
-	.map
-		border: 1px solid
 // !533px
 @media ( max-width: 533px)
 	.hotel
@@ -274,6 +282,8 @@
 			margin-left: 10px
 			margin-right: 2px
 			margin-top: 0
+		&__heading
+			letter-spacing: -0.5px
 	.map
 		height: 173px
 	.slider

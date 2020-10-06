@@ -895,10 +895,18 @@ template {
 .map {
   width: 347px;
   height: 213px;
-  background-color: #000;
+  background-color: #fadfdf;
   -webkit-border-radius: 10px;
           border-radius: 10px;
   overflow: hidden;
+}
+
+.map iframe {
+  border-width: 0;
+  border: 0;
+  allowfullscreen: "";
+  aria-hidden: false;
+  tabindex: 0;
 }
 
 @media (max-width: 1200px) {
@@ -913,6 +921,9 @@ template {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .hotel-info__description {
+    margin-bottom: 0;
   }
 }
 
@@ -1070,10 +1081,7 @@ template {
   }
 }
 
-@media (max-width: 740px) {
-  .container {
-    max-width: 670px;
-  }
+@media (max-width: 755px) {
   .slider {
     width: 670px;
   }
@@ -1083,9 +1091,18 @@ template {
   .map {
     width: 330px;
   }
+  .hotel-block {
+    max-width: 670px;
+  }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 740px) {
+  .container {
+    max-width: 670px;
+  }
+}
+
+@media (max-width: 722px) {
   .container {
     max-width: 650px;
     width: 92%;
@@ -1192,9 +1209,6 @@ template {
   .booking {
     padding: 22px;
   }
-  .map {
-    border: 1px solid;
-  }
 }
 
 @media (max-width: 533px) {
@@ -1300,6 +1314,9 @@ template {
     margin-left: 10px;
     margin-right: 2px;
     margin-top: 0;
+  }
+  .booking__heading {
+    letter-spacing: -0.5px;
   }
   .map {
     height: 173px;
