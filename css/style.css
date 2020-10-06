@@ -562,7 +562,7 @@ template {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 3px;
+  padding-bottom: 7px;
 }
 
 .hotel-info__description {
@@ -788,7 +788,7 @@ template {
   font-weight: 400;
   font-size: 10px;
   line-height: 14px;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.2px;
 }
 
 .booking__pricetag {
