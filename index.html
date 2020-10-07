@@ -140,55 +140,57 @@
           <!-- /.hotel-info__right -->
         </div>
         <div class="hotel-grid">
-          <div class="slider hotel__slider">
-            <!-- Slider main container -->
-            <div class="swiper-container">
-              <!-- Additional required wrapper -->
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="img/slide-1.jpg"
-                    alt="slide-1"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="img/slide-2.jpg"
-                    alt="slide-2.jpg"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="img/slide-3.jpg"
-                    alt="slide-3.jpg"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="img/slide-4.jpg"
-                    alt="slide-4.jpg"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    class="swiper-slide__image"
-                    src="img/slide-5.jpg"
-                    alt="slide-5"
-                  />
-                </div>
+          <!-- Slider main container -->
+          <div class="swiper-container hotel-slider hotel__slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="swiper-slide__image"
+                  src="img/slide-1.jpg"
+                  alt="slide-1"
+                />
               </div>
-
-              <button class="slider-button slider-button--prev"></button>
-              <button class="slider-button slider-button--next"></button>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="swiper-slide__image"
+                  src="img/slide-2.jpg"
+                  alt="slide-2.jpg"
+                />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="swiper-slide__image"
+                  src="img/slide-3.jpg"
+                  alt="slide-3.jpg"
+                />
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="swiper-slide__image"
+                  src="img/slide-4.jpg"
+                  alt="slide-4.jpg"
+                />
+                hotel-slider__item
+              </div>
+              <div class="swiper-slide hotel-slider__item">
+                <img
+                  class="swiper-slide__image"
+                  src="img/slide-5.jpg"
+                  alt="slide-5"
+                />
+              </div>
             </div>
-            <!--/.swiper-container-->
+
+            <button
+              class="hotel-slider__button hotel-slider__button--prev"
+            ></button>
+            <button
+              class="hotel-slider__button hotel-slider__button--next"
+            ></button>
           </div>
-          <!-- /.slider -->
+          <!--/.swiper-container-->
           <div class="hotel-block">
             <div class="booking">
               <div class="booking__info">
@@ -261,9 +263,10 @@
     <!-- /.newsletter -->
     <section class="reviews">
       <div class="container">
-        <h2 class="section-title">What people think about us</h2>
+        <h2 class="reviews__title">What people think about us</h2>
         <div class="swiper-container reviews-slider">
           <div class="swiper-wrapper">
+            <!-- !Avatar-1 -->
             <div class="swiper-slide">
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
@@ -274,7 +277,7 @@
                   />
                   <h3 class="reviews-slider__username">Megan Fox</h3>
                   <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
-                  <div class="raiting">
+                  <div class="reviews-slider__raiting">
                     <img src="img/star.svg" alt="star" /><img
                       src="img/star.svg"
                       alt="star"
@@ -283,18 +286,146 @@
                       alt="star"
                     /><img src="img/star.svg" alt="star" />
                   </div>
-                  <!-- /.raiting -->
+                  <!-- /.reviews-slider__raiting -->
                 </div>
                 <!-- /.reviews-slider__profile -->
+                <p class="reviews-slider__text">
+                  It was very nice hotel with cleanliness. Staff behavior was
+                  good and polite. They welcome us very well. Issue was only
+                  that Lift was not in working and we were allotted to 3rd floor
+                  and amenities articles were in corner of gallery which were
+                  giving bad feeling. Breakfast was good and support of the
+                  staff was also very nice. Location is not good as per
+                  atmosphere, it is very nearby most of the popular places but
+                  self location in a narrow street is not good. Overall it was a
+                  good experience and could recommend.
+                </p>
+              </div>
+              <!-- /.reviews-slider__item -->
+            </div>
+            <!-- /.swiper-slide -->
+            <!-- !Avatar-2 -->
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img
+                    src="img/reviews-avatar-2.jpg"
+                    alt="Photo: Keanu Reeves"
+                    class="reviews-slider__avatar"
+                  />
+                  <h3 class="reviews-slider__username">Keanu Reeves</h3>
+                  <span class="reviews-slider__date">Stayed 8 Oct, 2019</span>
+                  <div class="reviews-slider__raiting">
+                    <img src="img/star.svg" alt="star" /><img
+                      src="img/star.svg"
+                      alt="star"
+                    /><img src="img/star.svg" alt="star" /><img
+                      src="img/star.svg"
+                      alt="star"
+                    /><img src="img/star.svg" alt="star" />
+                  </div>
+                  <!-- /.reviews-slider__raiting -->
+                </div>
+                <!-- /.reviews-slider__profile -->
+                <p class="reviews-slider__text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Aliquid, dolores libero facere earum, vel et nemo consectetur
+                  dolore, explicabo error at quaerat blanditiis ea sequi placeat
+                  repellat amet neque totam.Location is not good as per
+                  atmosphere, it is very nearby most of the popular places but
+                  self location in a narrow street is not good. Overall it was a
+                  good experience and could recommend.
+                </p>
+              </div>
+              <!-- /.reviews-slider__item -->
+            </div>
+            <!-- /.swiper-slide -->
+            <!-- !Avatar-3 -->
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img
+                    src="img/reviews-avatar-3.jpg"
+                    alt="Photo: Bob Snow"
+                    class="reviews-slider__avatar"
+                  />
+                  <h3 class="reviews-slider__username">Bob Snow</h3>
+                  <span class="reviews-slider__date">Stayed 20 Oct, 2019</span>
+                  <div class="reviews-slider__raiting">
+                    <img src="img/star.svg" alt="star" /><img
+                      src="img/star.svg"
+                      alt="star"
+                    /><img src="img/star.svg" alt="star" /><img
+                      src="img/star.svg"
+                      alt="star"
+                    /><img src="img/star.svg" alt="star" />
+                  </div>
+                  <!-- /.reviews-slider__raiting -->
+                </div>
+                <!-- /.reviews-slider__profile -->
+                <p class="reviews-slider__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus a praesentium ab deserunt ipsum reprehenderit
+                  accusantium sapiente ea, debitis, quidem doloribus non placeat
+                  voluptate quasi voluptatum iure aliquam molestiae veniam
+                  laboriosam nostrum porro voluptatem obcaecati. Dolor cumque
+                  eum minus unde repellendus aut earum qui voluptatem?
+                  Molestiae, cupiditate. Obcaecati, ea asperiores.
+                </p>
+              </div>
+              <!-- /.reviews-slider__item -->
+            </div>
+            <!-- /.swiper-slide -->
+            <!-- !Avatar-4 -->
+            <div class="swiper-slide">
+              <div class="reviews-slider__item">
+                <div class="reviews-slider__profile">
+                  <img
+                    src="img/reviews-avatar-4.jpg"
+                    alt="Photo: Anders Lönnfeldt"
+                    class="reviews-slider__avatar"
+                  />
+                  <h3 class="reviews-slider__username">Anders Lönnfeldt</h3>
+                  <span class="reviews-slider__date">Stayed 21 Jan, 2020</span>
+                  <div class="reviews-slider__raiting">
+                    <img src="img/star.svg" alt="star" /><img
+                      src="img/star.svg"
+                      alt="star"
+                    /><img src="img/star.svg" alt="star" /><img
+                      src="img/star.svg"
+                      alt="star"
+                    /><img src="img/star.svg" alt="star" />
+                  </div>
+                  <!-- /.reviews-slider__raiting -->
+                </div>
+                <!-- /.reviews-slider__profile -->
+                <p class="reviews-slider__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum
+                  assumenda aspernatur sapiente tempora, quas nam ea dolor in
+                  similique, vitae magni tempore porro esse. Fugit ab quasi
+                  beatae nihil ullam quam praesentium, atque deleniti,
+                  distinctio natus, perspiciatis temporibus delectus minima
+                  officia totam. Odit inventore dicta saepe accusantium! Quas
+                  corrupti nisi nobis doloribus rerum quo voluptas harum labore
+                  quisquam pariatur. Soluta, harum nam? Dignissimos iusto culpa
+                  veniam iste. Omnis cum officia eius atque, harum est
+                  voluptates similique autem laudantium nesciunt repellendus
+                  voluptas facere quas illo enim dolore quaerat veritatis
+                  minima? Provident fuga accusantium voluptatem dolor quos
+                  asperiores repudiandae dolorem molestias enim.
+                </p>
               </div>
               <!-- /.reviews-slider__item -->
             </div>
             <!-- /.swiper-slide -->
           </div>
           <!-- /.swiper-wrapper -->
-
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <button
+            class="reviews-slider__button reviews-slider__button--prev"
+          ></button>
+          <button
+            class="reviews-slider__button reviews-slider__button--next"
+          ></button>
         </div>
         <!-- /.swiper-container reviews-slider -->
       </div>
