@@ -32,6 +32,7 @@
 		&__input
 			max-width: 340px
 	.hotel
+		margin-bottom: -10px
 		&-grid
 			flex-direction: column
 		&__slider
@@ -48,6 +49,19 @@
 				width: 700px
 	.map
 		width: 340px
+	.newsletter
+		// margin-top: 10px
+		&-wrapper
+			max-width: 670px
+			margin-top: -10px
+	.subscribe
+		&__input
+			padding-left: 31px
+			padding-right: 77px
+			padding-top: 6px
+		&__button
+			font-size: 12px
+			padding-top: 3px
 // !768px
 @media (max-width: 768px)
 	.container
@@ -121,6 +135,25 @@
 			margin-top: -2px
 	.map
 		width: 340px
+	.newsletter
+		&-wrapper
+			margin-left: 33px
+		&__subscribe
+			margin-right: -31px
+// !758px
+@media ( max-width: 758px )
+	.newsletter
+		&-wrapper
+			max-width: 576px
+			width: 92%
+			margin: auto
+			display: flex
+			flex-direction: column
+			// align-items: flex-start
+		&-title
+			margin-right: 107px
+		&__subscribe
+			margin: 0
 // !755px
 @media ( max-width: 755px )
 	.slider
@@ -220,6 +253,18 @@
 			margin: 0
 	.map
 		width: 100%
+// !395px
+@media ( max-width: 395px )
+	.newsletter
+		&-wrapper
+			max-width: 280px
+		&-title
+			font-size: 20px
+			margin-right: 80px
+			&__strong
+				font-size: 30px
+		&__subscribe
+			max-width: 280px
 // !320px 
 @media (max-width: 320px)
 	.container
@@ -284,6 +329,7 @@
 			margin-top: 0
 	.map
 		height: 173px
+		margin-bottom: 49px
 	.slider
 		&-button
 			width: 11px
@@ -296,3 +342,14 @@
 				right: 8px
 				top: 92px
 				background-size: 5px
+	.newsletter
+		width: 100%
+		height: 319px
+		&-title
+			margin-top: -6px
+		&__subscribe
+			margin-top: 15px
+	.subscribe
+		&__input
+			padding-left: 17px
+			padding-top: 2px
