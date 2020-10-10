@@ -1173,7 +1173,15 @@ template {
 }
 
 .activities {
-  padding: 60px 0 98px 0;
+  padding: 38px 0 98px 0;
+}
+
+.activities__card:nth-child(1) .card__title {
+  width: 160px;
+}
+
+.activities__card:nth-child(3) .card__title {
+  width: 160px;
 }
 
 .activities__title {
@@ -1498,6 +1506,15 @@ template {
   }
   .card__title {
     width: 141px;
+  }
+  .activities {
+    padding-top: 64px;
+  }
+  .activities__card:nth-child(2) .card__title {
+    width: 160px;
+  }
+  .activities__card:nth-child(4) .card__title {
+    width: 200px;
   }
   .card__image {
     position: absolute;
