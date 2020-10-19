@@ -139,22 +139,21 @@
 .footer
 	&-bottom
 		display: grid
-		grid-template: 1fr / repeat(3, 1fr)
+		grid-template: 1fr / repeat(3, auto)
 		&__leftside
 			grid-column-start: 2
 			max-width: 300px
+			margin-left: 300px
 		&__rightside
 			display: grid
 			justify-content: flex-end
 .ul
 	&-links
 		display: grid
-		grid-template: 1fr / repeat(3, minmax(150px, 1fr))
+		grid-template: 1fr / repeat(3, minmax(min-content, max-content))
 		list-style: none
 		margin: 10px 0
 		padding: 0
-		&__item
-			max-width: 100px
 		&__link
 			text-decoration: none
 			color: $light
@@ -166,8 +165,11 @@
 		display: grid
 		grid-template: 1fr / repeat(5,minmax(30px,1fr ))
 		list-style: none
-		min-width: 200px
-		margin: 10px 0
+		max-width: 136px
+		max-height: 22px
+		margin-top: 10px
+		margin-right: 41px
+		margin-bottom: 10px
 		&__image
-			max-width: 50px
-			max-height: 20px
+			max-width: 23px
+			max-height: 14px
