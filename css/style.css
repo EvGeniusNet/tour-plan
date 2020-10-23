@@ -2141,6 +2141,9 @@ a {
   .navbar-menu__item--mobile--visible {
     display: block;
   }
+  .breadcrumb {
+    padding: 17px 0 21px 0;
+  }
   .menu-button {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2468,6 +2471,7 @@ a {
   .container {
     max-width: 280px;
     margin: auto;
+    min-height: 80px;
   }
   .logo {
     margin-top: 26px;
@@ -2490,8 +2494,8 @@ a {
             align-items: center;
   }
   .breadcrumb {
-    padding: 17px 0 21px 0;
     height: 51px;
+    padding-top: 11px;
   }
   .breadcrumb-list {
     margin: 0;
@@ -2502,6 +2506,9 @@ a {
   }
   .hotel-block {
     margin-top: -10px;
+  }
+  .hotel-info {
+    margin-top: -7px;
   }
   .hotel-info__description {
     margin: 0;
