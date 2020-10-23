@@ -118,13 +118,14 @@
 		margin: 0 auto 0 auto
 	.rating__counter span
 		font-size: 10px
-	.navbar-menu
-		padding: 20px 13.5px
-	.navbar-top
-		height: 100px
-		padding: 30px 0px
-	.navbar__search
-		margin-left: 47px
+	.navbar
+		&-menu
+			padding: 20px 13.5px
+		&-top
+			height: 100px
+			padding: 30px 0px
+		&__search
+			margin-left: 47px
 	.user__name
 		padding-top: 5px
 	.breadcrumb-list
@@ -317,9 +318,42 @@
 	.container
 		max-width: 650px
 		width: 92%
+	body
+		padding-top: 78px
 	.navbar
-		&__search, &-menu, &__user
+		&__mobile
+			&--fixed
+				position: fixed
+				left: 0
+				top: 0
+				right: 0
+				z-index: 99
+		&__user, &__search
+			&--mobile
+				&--hidden
+					display: none
+				&--visible
+					display: flex
+		&__user
+			flex-direction: column
+			justify-content: center
+		&-bottom
 			display: none
+			position: fixed
+			left: 0
+			right: 0
+			bottom: 0
+			top: 78px
+			padding-top: 30px
+			&--visible
+				display: block
+		&-menu
+			flex-direction: column
+			&__item
+				margin-bottom: 20px
+				&--mobile
+					&--visible
+						display: block
 	.menu
 		&-button
 			display: flex
@@ -336,6 +370,12 @@
 				width: 16px
 				height: 1px
 				background-color: $text-color
+	.user
+		&__name
+			&--light
+				color: $light
+				margin-left: 0
+				margin-top: 10px
 	.stars
 		flex-basis: auto
 	.hotel
