@@ -334,6 +334,7 @@
 					display: none
 				&--visible
 					display: flex
+					margin: auto
 		&__user
 			flex-direction: column
 			justify-content: center
@@ -570,6 +571,11 @@
 			max-width: 290px
 		&__message
 			max-width: 290px
+	.navbar
+		&__search
+			&--mobile
+				&--visible
+					max-width: 243px
 // !320px 
 @media (max-width: 320px)
 	.container
@@ -588,8 +594,8 @@
 					margin-bottom: 6px
 					display: flex
 					align-items: center
-		&-bottom
-			display: none
+		// &-bottom
+		// 	display: none
 	.breadcrumb
 		padding: 17px 0 21px 0
 		height: 51px
