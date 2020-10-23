@@ -365,7 +365,7 @@ template {
   display: none;
 }
 
-.navbar {
+.navbar__mobile {
   background-color: #fff;
 }
 
@@ -2087,7 +2087,7 @@ a {
   body {
     padding-top: 78px;
   }
-  .navbar__mobile--fixed {
+  .navbar__mobile {
     position: fixed;
     left: 0;
     top: 0;
@@ -2123,6 +2123,7 @@ a {
     bottom: 0;
     top: 78px;
     padding-top: 30px;
+    overflow-y: auto;
   }
   .navbar-bottom--visible {
     display: block;
