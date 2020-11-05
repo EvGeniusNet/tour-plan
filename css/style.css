@@ -1833,7 +1833,7 @@ a {
     padding-top: 21px;
   }
   .hotel {
-    padding-top: 25px;
+    padding-top: 0px;
   }
   .hotel-info {
     padding-bottom: 9px;
@@ -1854,6 +1854,7 @@ a {
   }
   .breadcrumb-list {
     padding-top: 21px;
+    padding-bottom: 0;
   }
   .breadcrumb-list-wrapper {
     max-width: 268px;
@@ -2606,7 +2607,7 @@ a {
   .reviews-slider__item:after, .reviews-slider__item::before {
     display: none;
   }
-  .reviews-slider__text {
+  .reviews-slider__item__text {
     max-width: 219px;
   }
   .reviews-slider__button {
