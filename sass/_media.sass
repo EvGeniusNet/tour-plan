@@ -536,12 +536,17 @@
 
 // !485px
 @media ( max-width: 485px )
-
 	.ul
 		&-links
 			&__link
 				font-size: 11px
 				margin-right: 14px
+	.modal
+		&__dialog
+			max-width: 430px
+			padding: 33px 33px
+		&__form
+			width: 290px
 // !480px
 @media ( max-width: 480px)
 	.footer
@@ -575,6 +580,11 @@
 				max-width: 320px
 		&__message
 			max-width: 320px
+	.modal
+		&__dialog
+			padding: 22px 22px
+		&__form
+			width: 270px
 // !345px
 @media ( max-width: 345px)
 	.footer
@@ -588,6 +598,11 @@
 			&--mobile
 				&--visible
 					max-width: 243px
+	.modal
+		&__dialog
+			padding: 15px 15px
+		&__form
+			width: 250px
 // !320px 
 @media (max-width: 320px)
 	.container
@@ -792,3 +807,6 @@
 				margin-left: 0
 			&__rightside
 				margin-top: -3px
+	.modal
+		&__form
+			width: 240px
