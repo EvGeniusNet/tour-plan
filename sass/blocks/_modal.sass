@@ -17,7 +17,7 @@
 		position: fixed
 		top: 50%
 		left: 50%
-		max-width: 478px
+		min-width: 475px
 		padding: 33px 88px
 		background-color: $dark
 		transform: translate(-50%, -50%)
@@ -26,7 +26,7 @@
 		z-index: 101
 		visibility: hidden
 		opacity: 0
-		transition: opacity 0.5s
+		transition: all 0.8s ease 0s
 		&--visible
 			visibility: visible
 			opacity: 1
@@ -46,11 +46,12 @@
 		text-align: center
 	&__input
 		width: 100%
-		margin-bottom: 15px
+		margin-top: 15px
 	&__message
 		width: 100%
 		min-height: 123px
 		margin-bottom: 15px
+		margin-top: 15px
 	&__info
 		color: #E0E0E0
 		font-style: normal

@@ -18,7 +18,8 @@
 		height: 230px
 	.footer
 		&__input
-			flex-basis: 100%
+			&-group
+				flex-basis: 100%
 		// !992px
 @media (max-width: 992px)
 	.container
@@ -108,7 +109,8 @@
 				grid-row: 4
 				grid-column: span 5
 		&__input
-			flex-basis: 49%
+			&-group
+				flex-basis: 49%
 		&-bottom
 			&__leftside
 				margin-left: -120px
@@ -230,7 +232,8 @@
 	.footer
 		padding-top: 7px
 		&__input
-			flex-basis: 100%
+			&-group
+				flex-basis: 100%
 		&-bottom
 			grid-template: 1fr / repeat(3, 1fr)
 			&__leftside
@@ -271,8 +274,9 @@
 			max-width: 538px
 			margin-top: 0
 		&__input
-			flex-basis: 47%
-			margin-top: 3px
+			&-group
+				flex-basis: 47%
+				margin-top: 3px
 		&__info
 			font-size: 12px
 	.ul
@@ -483,8 +487,9 @@
 		&__message
 			max-width: 475px
 		&__input
-			width: 100%
-			flex-basis: unset
+			&-group
+				width: 100%
+				flex-basis: unset
 		&__form
 			flex-direction: column
 			align-items: start
@@ -516,7 +521,8 @@
 @media ( max-width: 510px)
 	.footer
 		&__input
-			max-width: 450px
+			&-group
+				max-width: 450px
 		&__message
 			max-width: 450px
 // !502px
@@ -547,7 +553,8 @@
 @media ( max-width: 430px)
 	.footer
 		&__input
-			max-width: 370px
+			&-group
+				max-width: 370px
 		&__message
 			max-width: 370px
 // !395px
@@ -564,14 +571,16 @@
 			max-width: 280px
 	.footer
 		&__input
-			max-width: 320px
+			&-group
+				max-width: 320px
 		&__message
 			max-width: 320px
 // !345px
 @media ( max-width: 345px)
 	.footer
 		&__input
-			max-width: 290px
+			&-group
+				max-width: 290px
 		&__message
 			max-width: 290px
 	.navbar
@@ -775,7 +784,8 @@
 			margin-top: -4px
 			margin-bottom: -32px
 		&__input
-			max-width: 280px
+			&-group
+				max-width: 280px
 		&-bottom
 			grid-template-rows: 0px 0px
 			&__leftside
